@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Sinh Viên CNTT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* Khung ngoài bao trọn trang web */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Header chính */
+        header.main-header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        header.main-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header.main-header p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+        }
+
+        /* Thanh điều hướng Navbar */
+        nav {
+            background-color: #e6f0fa;
+            padding: 10px;
+            border-top: 1px solid #b8d1e8;
+            border-bottom: 1px solid #b8d1e8;
+        }
+
+        nav a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        /* Bố cục main chia 2 cột */
+        main {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Cột bài viết chính (trái) */
+        article {
+            flex: 3;
+        }
+
+        article header h2 {
+            font-size: 18px;
+            color: #003366;
+            margin-top: 0;
+        }
+
+        article header p {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        article p {
+            line-height: 1.6;
+            font-size: 14px;
+            color: #333;
+            text-align: justify;
+        }
+
+        article footer {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            color: #555;
+        }
+
+        /* Cột sidebar bên phải */
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            height: fit-content;
+        }
+
+        aside h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+
+        aside ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        aside a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        /* Footer cuối trang */
+        footer.main-footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        footer.main-footer address {
+            font-style: normal;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header chính -->
+        <header class="main-header">
+            <hgroup>
+                <h1>BÁO SINH VIÊN CNTT</h1>
+                <p>Tin tức – Công nghệ – Sáng tạo</p>
+            </hgroup>
+        </header>
+
+        <!-- Thanh điều hướng -->
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Tin công nghệ</a>
+            <a href="#">Sự kiện</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
+        <!-- Nội dung chính chia 2 cột -->
+        <main>
+            <!-- Cột trái: Bài viết -->
+            <article>
+                <header>
+                    <h2>Khám Phá Sức Mạnh AI: Hội Thảo Tương Lai Đổi Mới Chấn Động Giới Trẻ</h2>
+                    <p>Tác giả: Lưu Trọng Nguyên | Ngày: 15/11/2024</p>
+                </header>
+
+                <p>
+                    <strong>AI (Artificial Intelligence)</strong>, <em>Hội thảo Tương Lai Đổi Mới</em> châm phá AI chấn động 
+                    giới trẻ với sự tham gia của đông đảo sinh viên. Việc ứng dụng AI vào học tập và phát triển cá nhân đang trở thành 
+                    xu hướng tất yếu trong kỷ nguyên số. <em>Hội thảo Tương Lai Đổi Mới</em> hứa hẹn mở ra nhiều cơ hội mới cho thế hệ trẻ.
+                </p>
+
+                <p>
+                    <strong>Máy học</strong> là một nhánh quan trọng trong lĩnh vực AI. Tại <em>Hội thảo Tương Lai Đổi Mới</em>, 
+                    các chuyên gia đã chia sẻ về ứng dụng của <strong>máy học</strong> trong xử lý dữ liệu lớn, giúp sinh viên nâng cao 
+                    kỹ năng thực hành và định hướng nghề nghiệp tương lai thông qua <em>Diễn đàn Thanh niên Sáng tạo</em>.
+                </p>
+
+                <p>
+                    <strong>Công nghệ số</strong> đang thay đổi toàn bộ đời sống xã hội. <em>Diễn đàn Thanh niên Sáng tạo</em> 
+                    là nơi kết nối các bạn trẻ đam mê công nghệ, cùng nhau thảo luận về giải pháp AI và các xu hướng công nghệ mới 
+                    nhằm thúc đẩy tinh thần sáng tạo trong cộng đồng sinh viên.
+                </p>
+
+                <footer>
+                    <p>Nguồn: CLB Tin học – ĐH ABC</p>
+                </footer>
+            </article>
+
+            <!-- Cột phải: Tin liên quan -->
+            <aside>
+                <h3>Tin liên quan</h3>
+                <ul>
+                    <li><a href="#">Hackathon Sinh viên 2024 - Tham Gia Ngay!</a></li>
+                    <li><a href="#">Workshop Web Design cho Người Mới Bắt Đầu</a></li>
+                    <li><a href="#">Meetup Khởi Nghiệp Công Nghệ Trẻ</a></li>
+                </ul>
+            </aside>
+        </main>
+
+        <!-- Footer trang -->
+        <footer class="main-footer">
+            <address>
+                Trường Đại học ABC | Số 123 Đường Sáng Tạo, Phường Kỹ Thuật, Quận Công Nghệ, TP. Hồ Chí Minh | 
+                SĐT: 028-9876543 | Email: lienhe@abc.edu.vn | Website: www.abc.edu.vn
+            </address>
+        </footer>
+    </div>
+
+</body>
+</html>

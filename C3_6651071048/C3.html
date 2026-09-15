@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Điện tử ABC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Khung chứa toàn bộ trang */
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Header chính */
+        header.main-header {
+            display: flex;
+            align-items: center;
+            background-color: #e6f0fa;
+            padding: 15px 20px;
+            border-bottom: 2px solid #b8d1e8;
+            gap: 20px;
+        }
+
+        header.main-header img {
+            border: 1px dashed #666;
+            background-color: #fff;
+        }
+
+        header.main-header h1 {
+            margin: 0;
+            color: #003366;
+            font-size: 26px;
+        }
+
+        /* Bố cục chính 2 cột */
+        main {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Cột trái: Thông tin sản phẩm & Sản phẩm tương tự */
+        .content-left {
+            flex: 3;
+        }
+
+        .product-detail {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .product-detail img {
+            border: 1px solid #ccc;
+        }
+
+        .product-info h2 {
+            margin-top: 0;
+            color: #003366;
+            font-size: 20px;
+        }
+
+        .product-info p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* Bảng thông số kỹ thuật */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+
+        table caption {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+            text-align: left;
+            color: #003366;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        thead {
+            background-color: #e6f0fa;
+        }
+
+        /* Danh sách sản phẩm tương tự */
+        .related-products h2 {
+            font-size: 18px;
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+
+        .related-products ol {
+            padding-left: 20px;
+        }
+
+        .related-products li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .related-products a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Cột bên phải (Sidebar) */
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            height: fit-content;
+        }
+
+        aside h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+
+        aside ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        aside li {
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .contact-info p {
+            font-size: 13px;
+            margin: 5px 0;
+            color: #333;
+        }
+
+        /* Footer trang */
+        footer.main-footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header có Logo và Tên Shop -->
+        <header class="main-header">
+            <img src="logo.png" alt="Logo Điện tử ABC" width="200" height="60">
+            <h1>Điện tử ABC</h1>
+        </header>
+
+        <!-- Khung nội dung chính -->
+        <main>
+            <!-- Cột trái chứa Thông tin sản phẩm & Bảng -->
+            <div class="content-left">
+                <section>
+                    <div class="product-detail">
+                        <img src="s24ultra.jpg" alt="Samsung Galaxy S24 Ultra" width="200" height="200">
+                        <div class="product-info">
+                            <h2>Samsung Galaxy S24 Ultra</h2>
+                            <p>
+                                Samsung Galaxy S24 Ultra là dòng điện thoại thông minh cao cấp nhất 
+                                mang lại trải nghiệm đỉnh cao về công nghệ, màn hình hiển thị sắc nét, 
+                                hiệu năng mạnh mẽ cùng hệ thống camera chụp ảnh chuyên nghiệp.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bảng thông số kỹ thuật -->
+                    <table>
+                        <caption>Thông số kỹ thuật</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Thông số</th>
+                                <th scope="col">Chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Màn hình</th>
+                                <td>6.8 inch, Dynamic AMOLED 2X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Camera</th>
+                                <td>200 MP + 50 MP + 12 MP + 10 MP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pin</th>
+                                <td>5000 mAh, sạc nhanh 45W</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">RAM</th>
+                                <td>12GB RAM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Bộ nhớ</th>
+                                <td>256GB / 512GB / 1TB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Section Sản phẩm tương tự -->
+                <section class="related-products">
+                    <h2>Sản phẩm tương tự</h2>
+                    <ol>
+                        <li><a href="#">iPhone 15 Pro Max</a> - 29.990.000 VNĐ</li>
+                        <li><a href="#">Xiaomi 14 Pro</a> - 19.990.000 VNĐ</li>
+                        <li><a href="#">Galaxy Z Fold5</a> - 34.990.000 VNĐ</li>
+                    </ol>
+                </section>
+            </div>
+
+            <!-- Cột bên phải (Chính sách & Liên hệ) -->
+            <aside>
+                <h3>Chính sách mua hàng</h3>
+                <ul>
+                    <li>Bảo hành 12 tháng</li>
+                    <li>Đổi trả 7 ngày</li>
+                    <li>Miễn phí ship (toàn quốc)</li>
+                </ul>
+
+                <div class="contact-info">
+                    <h3>Liên hệ</h3>
+                    <p>📍 Địa chỉ: Ngõ 120, Cầu Giấy, Hà Nội</p>
+                    <p>📞 0873.388.733</p>
+                    <p>✉️ email@dientuabc.com</p>
+                    <p>🌐 website.com</p>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Footer trang -->
+        <footer class="main-footer">
+            <p>Copyright © 2024 Điện tử ABC. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
